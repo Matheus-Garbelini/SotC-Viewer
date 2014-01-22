@@ -1,0 +1,486 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>README/Instuctions | OGLE: OpenGLExtractor by Eyebeam R&D</title>
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<base href="" />
+<link rel="stylesheet" type="text/css" href="misc/drupal.css">
+
+<link rel="stylesheet" type="text/css" href="themes/eyeres_smarty/style.css">
+
+</head>
+
+<body >
+
+<h1 class="invis">OGLE: OpenGLExtractor by Eyebeam R&D | README/Instuctions</h1>
+
+
+<table id="maintable"><TR><TD id="lefttable">
+<!------------------- top left corner for project logo ------------------------------>
+<div id="top-left" class="container" style="text-align: center !important;">
+<div class="logo">
+<a href="http://ogle.eyebeamresearch.org/"><img alt="OGLE: OpenGLExtractor by Eyebeam R&D" src="files/logo.jpg"></a>
+</div>
+</div>
+
+
+
+
+<!------------------- END top left corner for project logo ------------------------------>
+
+<div class="container-spacer"></div>
+
+<!------------------- left handside box for navigation ------------------------------>
+
+<div id="links" class="container">
+
+
+  
+<div class="eyeres-logo">
+<IMG SRC="themes/eyeres_smarty/images/eyeres-logo-small-above-red.jpg" WIDTH=220 HEIGHT=75 BORDER=0 USEMAP="#eye_open_imap_Map">
+<MAP NAME="eye_open_imap_Map">
+<AREA SHAPE="rect" ALT="" COORDS="0,18,220,73" HREF="http://research.eyebeam.org">
+<AREA SHAPE="rect" ALT="" COORDS="0,0,220,18" HREF="http://eyebeam.org">
+</MAP>
+
+
+
+  
+
+    
+          <!-- Left Sidebar -->
+        <div class="block block-block" id="block-block-1">
+  	<h2 class="block-title">Navigation</h2>
+    <div class="block-content"><ul >
+<li ><a href="http://ogle.eyebeamresearch.org/">Home</a></li>
+<li ><a href="http://ogle.eyebeamresearch.org/blog">Blog (stay updated)</a></li>
+<li ><a href="http://ogle.eyebeamresearch.org/architecture">How it Works</a></li>
+<li ><a href="http://ogle.eyebeamresearch.org/results">Example Results</a></li>
+<li ><a href="http://ogle.eyebeamresearch.org/download">Download</a></li>
+<li ><a href="readme">Instructions</a></li>
+<li ><a href="http://ogle.eyebeamresearch.org/limits">Bugs/Limitations/ToDo</a></li>
+<li ><a href="http://ogle.eyebeamresearch.org/applications">Applications</a></li>
+<li ><a href="http://ogle.eyebeamresearch.org/tools">Tools/Links</a></li>
+<li ><a href="http://ogle.eyebeamresearch.org/credits">Credits/Thanks/License</a></li>
+<li ><a href="http://ogle.eyebeamresearch.org/support">Tech Support</a></li>
+<li ><a href="http://ogle.eyebeamresearch.org/feedback">Feedback</a></li>
+</ul>
+</div>
+</div>
+      <!-- End Left Sidebar -->
+    
+    
+    
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+
+<div id="get-firefox">
+<a href="http://www.mozilla.org/products/firefox/">Best viewed with Firefox
+<br/>
+<img src="themes/eyeres_smarty/images/get_firefox.gif"></a>
+</div>
+
+
+
+
+
+</div>
+
+</div>
+
+<!------------------- END left handside box for navigation ------------------------------>
+
+
+</TD><td id="colspace"></td><TD id="righttable">
+<!------------------- top box for eyebeam logo ------------------------------>
+
+
+<!------------------- top box for eyebeam logo ------------------------------>
+
+<div id="top-right" class="container">
+
+<h1 class="title">README/Instuctions</h1>
+
+</div>
+<!------------------- END top box for eyebeam logo ------------------------------>
+
+
+<div class="container-spacer"></div>
+
+
+<!------------------- main box for the page content  ------------------------------>
+<div id="content" class="content container">
+
+
+
+<!-- LAYOUT: left -->
+
+        
+        
+        
+        <!-- start main content -->
+        <!-- begin content --><div class="node">
+    
+  <div class="content">
+  <a name="install"></a>
+<h2>Installation</h2>
+<p>
+  OGLE functions as a plugin to the fantastic and aptly named OpenGL DLL Proxy <a href="http://glintercept.nutty.org">GLIntercept</a> (specifically, version 0.5).  Thus, much of the installation and usage of OGLE is described by the GLIntercept documentation.
+
+<ol>
+  <li>Download and install GLIntercept 0.5 from
+    <a href="http://glintercept.nutty.org/download.html">http://glintercept.nutty.org/download.html</a>
+
+  </li>
+  
+  <li>
+    Read all of its documentation, and make sure it works -- try to log OpenGL function calls for 
+    the application you will be capturing 3D data from.
+  </li>
+
+  <li>
+    In using GLIntercept, the author has noticed some problems you may also encounter: <a name="gliproblems"></a>
+    <ul>
+      <li>
+      	Some applications do not seem to want to function (i.e. they crash!) with GLIntercept if the real 
+	<code>OpenGL32.dll</code> is in the system location.  If you are having wierd problems, 
+	try the following:
+	<ol>
+
+	  <li>
+	    Copy the sytem dll (most likely <code>C:\WINDOWS\system32\opengl32.dll</code>) 
+	    to your app's directory (name it <code>opengl32.orig.dll</code> or some such)
+	  </li>
+	  <li>
+	    Set	<code>GLSystemLib = &quot;opengl32.orig.dll&quot;;</code> in your <code>gliConfig.ini</code> file.
+	  </li>
+
+	</ol>
+      </li> 
+
+      <li>
+        The Error Checking functionality of GLIntercept can cause
+	applications to run very slowly.  Typically we set all of the Error Checking flags
+	(<code>GLErrorChecking, ThreadChecking, BreakOnError, LogOnError, ExtendedErrorLog, 
+	DebuggerErrorLog</code>) to <code>False</code>.
+      </li>
+
+      <li>
+        Same goes for Frame(Buffer) logging.  We <i>highly</i> recommend setting
+	<code>FrameLog::LogEnabled</code> to <code>False</code>.
+      </li>
+
+      <li>
+        Same also goes for per-frame function call logging.  We <i>highly</i> recommend setting 
+	<code>LogPerFrame::Enabled</code> to <code>True</code> so that GLIntercept only logs when
+	you tell it to, not throughout the whole run of your application.
+      </li>
+
+    </ul>
+
+    
+  </li>
+
+  <li>
+    If you do not already have it, download the compiled OGLE plugin from
+    <a href="http://ogle.eyebeamresearch.org/dist/">http://ogle.eyebeamresearch.org/download/</a>
+    (note: you want the most recent <code>.bin</code> distribution, not the <code>.src</code>).
+  </li>
+
+  <li>
+    Copy the whole OGLE distribution (i.e. the directory that contains the <code>OGLE.dll</code> file)
+    into the <code>Plugins</code> directory for your GLIntercept installation, typically<br>
+    <code>C:\Program Files\GLIntercept0_5\Plugins\</code>, and rename the directory to <code>OGLE</code> (i.e. change the name from <code>ogle_*</code> to <code>OGLE</code>).
+  </li>
+
+    
+  <li>
+    That's it, installed!  To <i>use</i> OGLE, keep reading the <a href="http://ogle.eyebeamresearch.org/#use">USAGE</a> section below.
+  </li>
+
+</ol>
+
+</p>
+
+
+<br>
+
+<a name="capture"></a>
+<h2>Usage</h2>
+<p>
+Most of the work in getting OGLE to capture 3D data is in the configuration of GLIntercept.  There are
+a number of settings that must be made to ensure OGLE functions properly. Since you have already tested the
+basic GLIntercept functionality, you already know by now that these changes must be made in the
+<code>gliConfig.ini</code> file in the same directory as your OpenGL-using application.
+</p>
+<p>
+<b>Configuration:</b>
+
+<ul>  
+    <li>
+      Modify the <code>glConfig.ini</code> file that you are using to work with OGLE.
+      <ul>
+
+        <li>
+	  The <code>OGLE/config/gliConfig_OGLE.ini</code> file that comes with this distribution works well
+	  for the author, so you can try just copying that over your <code>gliConfig.ini</code> file.
+	</li>
+	<li>OR, you can make the following specific isolated configuration changes:
+	  <pre>
+LogEnabled = True;
+...
+LogPerFrame
+{
+  Enabled = True;
+  ...
+  OneFrameOnly = True; 
+}
+...	    	    
+PluginData
+{
+  ...
+  Plugins
+  {
+    ...
+    OGLE = ("OGLE/OGLE.dll") 
+    {
+	Scale = 1.0;
+	FlipPolygonStrips = True;
+	CaptureNormals = False;
+	CaptureTextureCoords = False;
+	LogFunctions = False;
+	ObjFileName = "ogle";
+        FilePerFrame = False;
+        FileInFrameDir = False;
+
+	TRIANGLES = True;
+	TRIANGLE_STRIP = True;
+	TRIANGLE_FAN = True;
+	QUADS = True;
+	QUAD_STRIP = True;
+	POLYGON = True;
+    }
+	  </pre>
+	</li>
+
+      </ul>
+    </li>
+
+    <li>
+      OGLE has a number of custom settings that can be set in the <code>Plugins</code> section of
+      
+      <code>gliConfig.ini</code> or in the <code>Plugins\OGLE\config.ini</code> file:
+      <ul>
+
+        <li>
+	  <code>Scale</code><br>
+	  Scale all vertices by some value.  This is a convenience feature for use when the application
+	  you are capturing from uses absurdly small or large scales for no particular reason (you may recognize the need for this if the result file is very difficult to look at in your 3D modeling software).
+
+	</li>
+
+        <li>
+	  <code>FlipPolygonStrips</code><br>
+          Flip (re-orient) every other polygon drawn with the <code>TRIANGLE_STRIP</code> or <code>QUAD_STRIP</code> primitive.  This mimics OpenGL's behavior to get all the polygons facing the right way.  Defaults to <code>True</code>.
+	</li>
+
+
+        <li>
+	  <code>CaptureNormals</code><br>
+          Capture vertex normals.  Currently this defaults to False because there is a suspected bug in the code that does it.
+	</li>
+
+        <li>
+	  <code>CaptureTextureCoords</code><br>
+          Capture texture coordinates (UV).  Currently this defaults to False because there is a suspected bug in the code that does it.  If you are going to use this option to try to re-assign the texture maps that GLIntercept writes to disk, you will need to flip those textures, or just use the <code>ImageLog::FlipXAxis</code> option for GLIntercept.
+	</li>
+
+
+        <li>
+	  <code>LogFunctions</code><br>
+	  Log all the function calls that OGLE sees (a select subset of what GLIntercept logs) to the 
+	  <code>ogle.log</code> file.
+	</li>
+
+
+        <li>
+	  <code>ObjFileName</code><br>
+	  name of the actual .obj file to be outputted.  This file will be written in the directory from which you run your application.
+	</li>
+
+        <li>
+	  <code>FileInFrameDir</code><br>
+          flag whether or not to attempt to place the ouput OBJ file into the Frame_###### directory that GLIntercept creates.
+	</li>
+
+        <li>
+	  <code>FilePerFrame</code><br>
+          flag whether or not to name your output file with the current frame #.  this allows you to capture more than one data set per run of your application.
+	</li>
+
+
+
+        <li>
+	  <code>TRIANGLES, TRIANGLE_STRIP, TRIANGLE_FAN, QUADS, QUAD_STRIP, POLYGON</code><br>
+	  flags for whether or not to capture polygons rendered by each of the specific OpenGL primitives.
+	  This is configurable because you may want to disregard data drawn as a certain type of polygon for
+	  certain applications.  See <a href="http://www.eecs.tulane.edu/www/Terry/OpenGL/Primitives.html">http://www.eecs.tulane.edu/www/Terry/OpenGL/Primitives.html</a> for more info about the OpenGL primitive types.
+	</li>
+
+	
+
+      </ul>
+      
+      
+    </li>
+
+    <li>The OGLE GUI: Someone has put together a Windows GUI app that supposedly makes all tihs copying and configuring a lot easier.  You can try it at your own risk at: <a href="http://members.chello.at/alexan/">http://members.chello.at/alexan/</a> and give the creator feedback on the <a href="https://sourceforge.net/forum/message.php?msg_id=3693622">SourceForge forum</a>.</li>
+
+</ul>
+</p>
+
+<p>
+  <b>Data Capture Activation:</b><br>
+  
+  <ol>
+    <li>
+      Run your OpenGL application with GLIntercept configured to use the OGLE plugin (as seen above).
+    </li>
+
+    <li>
+      Activate frame logging using whatever keystrokes you have configured with the 
+      <code>LogPerFrame::FrameStartKeys</code> variable.  
+    </li>
+    <li>
+      Be patient -- your app will freeze and it can take a number of seconds or minutes for GLIntercept to log all 
+      of the data for that 
+      frame and OGLE to generate the 3D object file for the on-screen geometry.  You will know that
+      it is done when your application becomes interactive again.
+    </li>
+    <li>
+      Find the <code>.obj</code> file in the directory where your application runs.  Open it in 
+      <a href="http://blender.org/cms/Home.2.0.html">Blender</a> (free!), <a href="http://artofillusion.org/">ArtOfIllusion</a> (also free!),  
+      <a href="http://www.alias.com/glb/eng/products-services/family_details.jsp;jsessionid=53NE4KGL3GQQRQCLCWSSM44AJMK0IJVC?familyId=3900009">Maya</a> (not free),
+      or whatever other 3D editing/viewing/modelling application you use.  See the <a href="http://ogle.eyebeamresearch.org/tools">tools</a> section of this site for links/recommendations.
+    </li>
+
+    <li>
+    If the data capture appears to work, but the data you actually see in your 3D modelling software seems busted, you might want to play around with some of the above configuration options for OGLE -- try changing the <code>Scale</code>, turning on <code>CaptureNormals</code>, or disabling some of the primitive types.
+    </li>
+
+  </ol>
+</p>
+
+<a name="faq"></a>
+<p>
+  <b>FAQ:</b><br>
+
+  <ul>
+  <li><i>My program crashes off the bat whenever I try to run it with OGLE</i>:
+  You probably missed the pointers in the GLIntercept problems section of this page (step 3 of the Installation instructions).
+  </li>
+  <li><i>OGLE runs, but doesn't appear to capture any useful data when I open the .obj file in my 3D modeler</i>:
+<BR> 
+It is possible that the application works on a scale that so big or so small that it's hard to view the data.  Try playing with the <code>Scale</code> configuration option.
+<BR>
+</li>
+
+<a name="vertexprograms"></a>
+  <li><i>OGLE runs, but all the objects appear to be smushed around the origin</i>:
+<BR> 
+Your application is probably using Vertex Programs to do positioning (see the <a href="http://ogle.eyebeamresearch.org/limitations#vertexprograms">Limitations</a> page).  But, you can disable that functionality from OpenGL using the <code>GLExtOverride</code> plugin that comes with GLIntercept (described <a href="http://sourceforge.net/forum/forum.php?thread_id=1427740&forum_id=529065">in  the forums</a>) by making the following additions to your glConfig.ini file:
+<pre>
+...	    	    
+PluginData
+{
+  ...
+  Plugins
+  {
+    ...
+
+      ExtensionOverride = ("GLExtOverride/GLExtOverride.dll") 
+      { 
+	RemoveExtensions = (GL_ARB_vertex_program, GL_ARB_fragment_program); 
+      }
+</pre>
+ </li>
+
+
+<a name="vertexbuffers"></a>
+  <li><i>OGLE runs, but the capture is really a complete mess</i>:
+<BR> 
+It is possible that your application does something <i>extra funky</i> with Vertex Buffer Objects that confuses OGLE.  We recommend attempting to disable Vertex Buffer Objects much the same way that we disabled Vertex Programs <a href="readme#vertexprograms">above</a>:
+
+<pre>
+ 
+  ...
+	RemoveExtensions = (GL_ARB_vertex_buffer_object); 
+  ...
+
+</pre>
+
+Note: you will probably want to remove Vertex Programs as well as Vertex Buffer Objects, as such:<BR> 
+<code>RemoveExtensions = (GL_ARB_vertex_program, GL_ARB_fragment_program, GL_ARB_vertex_buffer_object)</code>
+
+</li>
+
+  </ul>
+
+
+
+</p>
+
+  </div>
+    
+  
+
+</div><!-- end content -->
+        <!-- end main content -->
+
+
+
+	<br clear="both">
+	<div id="footer">
+			<p>
+	<a href="http://www.eyebeam.org">Eyebeam</a>, a 501(c)3 non-profit arts and technology 
+	center based in New York City, has been nurturing and developing new media technologies 
+	since its founding in 1996. It runs educational and artistic residency programs, research
+	and production fellowships, and a variety of public programming, all dedicated to the 
+	identification and expansion of innovative technology.  Its facilities include several 
+	exhibition/event spaces, a video/animation production studio, and a research and development lab.
+	</p>	
+	<br>
+	<a href="http://www.eyebeam.org"><img src="themes/eyeres_smarty/images/eyebeam-logo-txt-red.jpg"></a>
+	<br><br>
+
+	All content on this site is free to re-use under the 
+	Creative Commons 
+	<a href="http://creativecommons.org/licenses/by-sa/2.5/">Share Alike license <br><img src="themes/eyeres_smarty/images/cc.png"></a>
+
+	<br>
+	<br>
+	site powered by <a href="http://drupal.org">drupal</a>
+
+	<br>
+	
+	</div>
+
+
+<div id="scaffold">&nbsp;</div>
+
+</div>
+<!------------------- END main box for the page content  ------------------------------>
+</TD></TR></table><br clear="all" />
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-76017-3";
+urchinTracker();
+</script>
+</body>
+</html>
+
+
+
+

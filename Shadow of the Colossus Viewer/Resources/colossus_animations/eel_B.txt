@@ -1,0 +1,15 @@
+eel_B_add_hire_yure_low_end.anb
+eel_B_add_hire_yure_low_loop.anb
+eel_B_add_hire_yure_low_start.anb
+eel_B_add_insight_dummy.anb
+eel_B_add_tail_up_end.anb
+eel_B_add_tail_up_loop.anb
+eel_B_add_tail_up_start.anb
+eel_B_addp_kune_tate_end.anb
+eel_B_addp_kune_tate_hi_loop.anb
+eel_B_addp_kune_tate_loop.anb
+eel_B_addp_kune_tate_start.anb
+eel_B_boot.anb
+eel_B_death.anb
+eel_B_death_loop.anb
+eel_B_move_f.anb

@@ -1,0 +1,15 @@
+minotaur_B_add_insight_dummy.anb
+minotaur_B_atk_hand_end1.anb
+minotaur_B_atk_hand_end2.anb
+minotaur_B_atk_hand_loop.anb
+minotaur_B_atk_hand_start.anb
+minotaur_B_atk_leg_strong.anb
+minotaur_B_boot_cancel.anb
+minotaur_B_boot_forMinoB.anb
+minotaur_B_death.anb
+minotaur_B_death_loop.anb
+minotaur_B_refuse_hand_l.anb
+minotaur_B_refuse_hand_r.anb
+minotaur_B_standby.anb
+minotaur_B_walk_atk1.anb
+minotaur_B_walk_atk2.anb

@@ -1,0 +1,311 @@
+body {
+	vertical-align: top;
+	font-family: lucida grande, arial, lucida sans unicode, geneva, lucida, helvetica, sans-serif;
+	font-size: 11px; 
+	line-height: 14px; 	
+	background-color: #F7F7F7;
+	color: #333333;
+}	
+
+
+td {
+	vertical-align: top;
+}
+	
+a:link, a:visited {
+	text-decoration: none;
+	color: #0099FF;
+}
+	
+a:hover {
+	color: #FFFFFF;
+	background-color: #0099FF;
+	text-decoration: none;
+}
+
+
+h1, h2, h3, h4, p, form, img {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+.invis {
+	display: none;
+}
+
+div.container {
+	background-color:#FFFFFF;
+
+	border-width: 1px;
+	border-style: solid;
+	border-top-color: #e3e3e3;
+	border-right-color: #cccccc;
+	border-bottom-color: #cccccc;
+	border-left-color: #e3e3e3;
+
+	text-align: left;
+}
+
+.container-spacer {
+	width: 100%;
+	height: 5px;
+	font-size: 5px;
+	line-height: 5px;
+}
+
+#content {
+	font-size: 12px;
+	line-height: 16px; 
+	font-family: lucida grande, arial, lucida sans unicode, geneva, lucida, helvetica, sans-serif;
+}
+
+#col-space {
+	width: 4px;
+}
+
+#lefttable {
+	width: 227px;
+	vertical-align: top;
+	text-align: center;
+}
+
+div.logo, img.logo {
+	vertical-align: middle;
+	text-align: center;
+	width: 225px;
+	height: 85px;
+}
+
+#links, #content {
+	padding: 10px 5px 10px; 5px;
+}
+
+#links p {
+	padding-bottom: 3px;
+}
+
+
+#links ul {
+	padding: 0px 0px 5px 15px;
+	margin: 0px;
+}
+
+#links ul li.section {
+	
+}
+
+#site-slogan {
+	font-size: 13px;
+	text-align: center;
+	margin-bottom: 5px !important;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border: solid 1px #CCC;
+}
+
+#links div.block {
+	padding-bottom: 10px;
+}
+
+#links .block p {
+	padding-left: 5px;
+}
+
+
+.menu {
+	padding: 0px !important;
+}
+
+.menu li {
+	list-style: none !important;
+}
+		
+#links h1, #content h1 {
+	color: #ff0000;
+	background-color:#e5e5e5;
+
+	font-size: 16px;
+	font-weight:bold;
+
+	line-height: 120%;
+
+ 	padding: 2px;
+	margin-bottom: 5px;
+}
+		
+#links h2, #content h2 {
+	color: #ff0000;
+	background-color:#e5e5e5;
+
+	font-size: 11px;
+	font-weight:bold;
+
+	letter-spacing: .3em;
+	text-transform:uppercase;
+
+ 	padding:2px;
+	margin-bottom:5px;
+}
+
+
+#links ul li {
+	list-style: none !important;
+}
+
+
+
+ul h3 {
+	border-bottom: 1px dotted #ddd;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+
+#get-firefox {
+	padding-top: 25px;
+}
+
+
+#righttable {
+	vertical-align: top;
+	text-align: center;
+}
+
+
+#top-right {
+	padding-top: 25px;
+	height: 60px;
+
+}
+
+#eyebeam-logo-container {
+	padding: 5px !important;
+	margin: 0px !important;
+	text-align: left;
+	position: relative;
+	width: 100%;
+}
+
+.eyebeam-logo {
+	height: 22px;
+	width: 326px;
+	background-color: #0000FF; 
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+
+
+
+.eyeres-logo {
+	padding: 5px 0px 5px 0px !important;
+	margin: 0px !important;
+}
+
+
+
+
+.title {
+	font-family: helvetica, arial, lucida grande, lucida sans unicode, geneva, lucida, sans-serif;
+	padding: 0px 5px 0px 5px;
+	font-size: 40px;
+	line-height: 40px;
+	vertical-align: middle;
+}
+
+#content p {
+	font-weight:normal;
+  	line-height:130%;
+	padding-left: 10px;
+	padding-bottom: 8px;
+}
+		
+#content ul, #content ol {
+	margin: 0px 0px 5px 0px;
+	padding: 0px 0px 0px 35px;
+}
+
+#content .proj {
+	vertical-align: top;
+	clear: both;
+	margin-bottom: 15px;
+}
+
+#content .proj img {
+	clear: both;
+	float: left;
+	padding-right: 10px;
+}
+
+#content .proj p {
+
+}
+
+#content .proj h3 {
+
+	font-size: 13px;
+	font-weight:bold;
+
+ 	padding:2px;
+	margin-bottom:5px;
+}
+
+#content .proj h2, #content .proj h3 {
+	clear: both;
+}
+
+
+#scaffold {
+	width: 500px;
+}
+
+.node {
+	padding-bottom: 15px;
+}
+
+.node-excerpt h1, .node-excerpt h2 {
+	scolor: #000 !important;
+	sbackground-color:#FFF !important;
+}
+
+.submitted {
+
+}
+
+
+
+
+#footer {
+	text-align: right;
+	border-top: solid thin #CCC;
+	color: #AAA;
+	margin-top: 25px;
+	clear: both;
+}
+
+
+.caveat {
+	color: #888888;
+}
+
+#locs, #search{
+	padding-left: 5px;
+	padding-top: 5px;
+}
+
+#toc {
+	text-align: center;
+	padding-top: 5px;
+}
+
+#toc a {
+	font-size: 9px;
+}
+
+.coderef li {
+	padding-bottom: 5px;
+}
+.coderef > ul > li {
+	padding-bottom: 10px;
+}
